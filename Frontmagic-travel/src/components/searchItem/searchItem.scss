@@ -1,0 +1,200 @@
+.searchItem {
+  border: 1px solid rgb(243, 95, 26);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: white;
+
+  .siImg {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .siDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2;
+  }
+
+  .mobileDesc {
+    display: none;
+  }
+}
+
+.siTitle {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.siDistance {
+  font-size: 12px;
+}
+
+.siTaxiOp {
+  font-size: 12px;
+  background-color:#ff4c30;
+  color: white;
+  width: max-content;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.siSubtitle {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.siFeatures {
+  font-size: 12px;
+}
+
+.siCancelOp {
+  font-size: 12px;
+  color: #008009;
+  font-weight: bold;
+}
+
+.siCancelOpSubtitle {
+  font-size: 12px;
+  color: #008009;
+}
+
+.siDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.siRating {
+  display: flex;
+  // justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.siRating > span {
+  font-weight: 500;
+}
+.siRating > button {
+  // background-color: #003580;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 2px 5px;
+  font-weight: bold;
+  margin-right: 5px;
+  border: none;
+}
+
+.siDetailTexts {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.siPrice {
+  font-size: 24px;
+}
+
+.siTaxOp {
+  font-size: 12px;
+  color: gray;
+}
+
+.siCheckButton {
+  background-color: black;
+  // background-color:#BC0000;
+  color: white;
+  padding: 0.5rem;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .searchItem {
+    display: block;
+    .siDetails,
+    .siDesc {
+      display: none;
+    }
+
+    .siImg {
+      // height:200px;
+      width: 100%;
+    }
+
+    .mobileDesc {
+      display: block;
+      .mobileDecRating {
+        .ratingBtn {
+          // background-color: #003580;
+          background-color: black;
+          color: white;
+          padding: 2px 5px;
+          font-weight: bold;
+          margin-left: 5px;
+          border: none;
+        }
+
+        .ratingText {
+          font-weight: 500;
+        }
+      }
+
+      .mobileDescFooter {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        align-items: center;
+        // background-color: #008009;
+
+        h5 {
+          font-size: 20px;
+          // line-height: 5px
+          margin-bottom: 0.15rem;
+        }
+
+        h6 {
+          font-size: 15px;
+          color: gray;
+        }
+
+        button {
+          // margin-bottom: 0.7rem;
+          background-color: black;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          font-weight: 500;
+          padding: 0.4rem 0.7rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+  .siCancelOpSubtitle {
+    display: none;
+  }
+
+  .siCheckButton {
+    padding: 0.5rem;
+    font-size: 14px;
+    width: 9em;
+  }
+}
+
+// .rating-cont{
+//   display: flex;
+//   justify-content: end;
+// }

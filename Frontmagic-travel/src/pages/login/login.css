@@ -1,0 +1,91 @@
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+
+
+.lInput{
+  height: 30px;
+  padding: 10px;
+}
+
+.lButton {
+  border: none;
+  padding: 10px 20px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.lButton:disabled{
+  background-color: #0071c28c;
+  cursor: not-allowed;
+}
+
+.btn-dark {
+  background-color: #ff4d2f;
+  color: white;
+  border-radius: 10px;
+}
+.registro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.register-button {
+  align-items: center;
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+  border: solid 1px #000000;
+  background: rgba(128, 128, 128, 0.274);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  
+
+  &:hover {
+    color: #000000; 
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+
+.login-mdb{
+  /* background-color: rgba(103, 71, 54, 0); */
+  overflow-y: auto;
+}
+
+.card-mdb{
+  border-radius: 2rem;
+}
+
+.img-mdb{
+  border-radius: 1rem 0 0 1rem;
+}
+
+.fa-cubes{
+  color: #ff6219;
+}
+
+.headersign{
+  letter-spacing: 1px;
+}

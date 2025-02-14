@@ -1,0 +1,179 @@
+.reserve {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.418);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000 !important;
+}
+
+.rContainer {
+  background-color: white;
+  padding: 20px;
+  width: 28rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.rClose {
+  font-size: 25px;
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  cursor: pointer;
+}
+
+.rItem {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.rInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.rTitle {
+  font-weight: 500;
+  color: #ff4d2f;
+}
+
+.rDesc {
+  font-weight: 300;
+}
+
+.rMax {
+  font-size: 12px;
+  color: black;
+}
+
+.rPrice {
+  font-weight: 500;
+  color: black;
+}
+
+.rSelectRooms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-size: 8px;
+  color: gray;
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+}
+
+.rButton {
+  border: none;
+  padding: 10px 20px;
+  background: orangered;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.rButton.active{
+    background: linear-gradient(rgba(0, 0, 0,0.4), rgba(103, 71, 54,0.4));
+  
+}
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid black;
+  border-color: black transparent black transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+.feedback {
+  .button-cont {
+    margin-top: 1.5rem;
+  }
+  button {
+    &.explore {
+      background-color: black !important;
+      color: white !important;
+    }
+    &.home {
+      background-color: #f34f16  !important;
+      color: white !important;
+    }
+  }
+  p {
+    color: rgb(0, 0, 0) !important;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .id {
+    .tooltips {
+      cursor: pointer;
+      position: relative;
+      .tooltiptext {
+        visibility: visible;
+        // width: 120px;
+        background-color: rgb(0, 0, 0, 0.5);
+        color: white;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 5px;
+        position: absolute;
+        z-index: 1;
+        top: -17px;
+        left: 115%;
+      }
+      &:hover {
+        color: gray;
+      }
+    }
+    line-height: 0.3rem;
+    .book {
+      font-weight: 600;
+      color: rgb(243, 74, 8);
+    }
+    span {
+      color: gray;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .rContainer {
+    width: 90%;
+  }
+}

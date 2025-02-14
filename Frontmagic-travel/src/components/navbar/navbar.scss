@@ -1,0 +1,61 @@
+.navbar {
+  background-color: rgb(0, 0, 0, 0.1) !important;
+  // height: 60px;
+
+  overflow: hidden;
+  z-index: 500 !important;
+
+  .navbar-brand {
+    color: #ff4d2f !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6rem;
+
+    &:hover {
+      color: rgb(197, 103, 59) !important;
+    }
+  }
+
+  ul {
+    li {
+      .btn {
+        color: black !important;
+        background: white !important;
+        cursor: pointer;
+        border-radius: 3px !important;
+        
+
+        &:hover {
+          background-color: rgb(10, 10, 10, 0.3) !important;
+          color: white !important;
+        }
+
+        i{
+          font-size: 17px;
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+.navbar.active {
+  background-color: rgb(0, 0, 0, 0.7) !important;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  background-color: white !important;
+  color: black !important;
+
+  &:hover {
+    background-color: rgb(10, 10, 10, 0.3) !important;
+    color: white !important;
+  }
+
+  i{
+    margin-left: 0.3rem;
+    font-size: 14px;
+  }
+}

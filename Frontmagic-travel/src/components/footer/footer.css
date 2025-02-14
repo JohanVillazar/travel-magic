@@ -1,0 +1,35 @@
+footer{
+  background-color:#f35016 !important;
+  margin-top: 8rem;
+}
+
+footer ul li a,p {
+color: white !important;
+}
+
+.company-name{
+  color: white !important;
+}
+/* .footer{
+  width: 100%;
+  width: 1024px;
+  font-size: 12px;
+}
+
+.fLists{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.fList{
+  list-style: none;
+  padding: 0;
+}
+
+.fListItem{
+  margin-bottom: 10px;
+  color: #003580;
+  cursor: pointer;
+} */
